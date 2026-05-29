@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 AI Examiner - Automated Answer Evaluation System
 
 An intelligent examination system that uses AI to automatically evaluate student answers against model answers, providing detailed feedback, marks, and suggestions for improvement.
@@ -309,3 +310,6 @@ This project is licensed under the MIT License.
 Made with ❤️ by the CodeWizards🧙‍♂️ Team
 
 
+=======
+# 23ayan9547
+>>>>>>> 41775d33903dee1ea4b0435b55925e18a8137179
