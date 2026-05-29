@@ -13,11 +13,11 @@ from io import BytesIO
 logger = logging.getLogger(__name__)
 
 # Set Poppler path only for Windows development
+
 POPPLER_PATH = None
 if platform.system() == 'Windows':
     # Local development path
-    POPPLER_PATH = r"C:\Users\Jayesh\poppler\poppler-23.08.0\Library\bin"
-
+    POPPLER_PATH = r"C:\Users\AYAN\Downloads\Release-26.02.0-0 (1)\poppler-26.02.0\Library\bin"
 class PDFProcessor:
     @staticmethod
     def extract_text_from_pdf(pdf_path):
@@ -32,8 +32,8 @@ class PDFProcessor:
             raise Exception(f"Error extracting text from PDF: {str(e)}")
     
     @staticmethod
-    def convert_pdf_to_images(pdf_path, max_pages=5):
-        """Convert PDF to images for Gemini vision API (limited to first 5 pages)"""
+    def convert_pdf_to_images(pdf_path, max_pages=10):
+        """Convert PDF to images for Gemini vision API (limited to first 10 pages)"""
         try:
             logger.info(f"Converting PDF to images: {pdf_path}")
             # Very low DPI for speed - Gemini can read low-res images fine
